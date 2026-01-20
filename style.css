@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* fonte da página */
     font-family: "Mona Sans", sans-serif;
     font-size: 1em;
     font-weight: 200;
@@ -36,7 +35,7 @@ body {
     max-width: 400px;
     background-color: #FFFFFF;
     border-radius: 2em;
-    padding: 1em; 
+    padding: 1.5em; 
 }
 
 form {
