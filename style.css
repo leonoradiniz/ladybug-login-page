@@ -15,7 +15,7 @@
 
 body {
     display: grid;
-    grid-template-rows: 1fr 0.5fr 0.5fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
     height: 100vh;
     place-items: center;
     row-gap: 2em;
