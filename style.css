@@ -102,10 +102,11 @@ a {
     font-weight: 400;
     color: #46699E;
     display: inline-block;
+    transition: all 0.03s ease;
 }
 
 a:active {
-    font-weight: 600;
+    font-weight: 500;
     color: #D84452;
     text-decoration: underline;
 }
