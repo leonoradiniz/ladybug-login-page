@@ -87,7 +87,7 @@ button {
     border: none;
     border-radius: 2em;
     margin-bottom: 0.25em;
-    transition: all 0.07s ease-in;
+    transition: all 0.03s ease-in;
 }
 
 button:active {
