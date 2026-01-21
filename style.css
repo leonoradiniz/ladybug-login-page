@@ -87,13 +87,14 @@ button {
     border: none;
     border-radius: 2em;
     margin-bottom: 0.25em;
+    transition: all 0.1s ease-in;
 }
 
 button:active {
     font-weight: 600;
-    background-color: #D84452;
+    background-color: #D32F2F;
     color: #F2F3F4;
-    transform: scale(0.98);
+    transform: scale(0.95);
 }
 
 a {
