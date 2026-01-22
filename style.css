@@ -126,7 +126,33 @@ a:active {
 /* media queries */
 
 @media screen and (min-width: 992px) {
+
     body {
         background-attachment: fixed;
+    }
+}
+
+@media (hover:hover) {
+    
+    button {
+        transition: all 0.3s ease-in;
+    }
+
+    button:hover {
+        cursor: pointer;
+        font-weight: 600;
+        background-color: #D32F2F;
+        color: #F2F3F4;
+        transform: scale(0.95);
+    }
+
+    a {
+        transition: all 0.1s ease;
+    }
+
+    a:hover {
+        font-weight: 500;
+        color: #D84452;
+        text-decoration: underline;
     }
 }
