@@ -12,13 +12,13 @@
 body {
     display: grid;
     grid-template-rows: 1fr repeat(2, auto) 4fr;
-    height: 100vh;
+    min-height: 100vh;
     place-items: center;
     row-gap: 1.5em;
     background-image: url("./images/ladybug-bg-image.jpg");
     background-size: cover;
-    background-color: rgba(255, 255, 255, 0.7);
-    background-blend-mode: lighten;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .ladybug-logo {
@@ -121,3 +121,11 @@ a:active {
 #sign-in {
     padding-top: 1em; 
 }
+
+/* media queries */
+
+@media (orientation: landscape) 
+
+@media screen /* definir breakpoints de tela */ - /* mudar :active pra :hover em telas desktop */
+
+/* ajustar a bg-image para ela se centralizar em telas menores */
