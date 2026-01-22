@@ -18,7 +18,7 @@ body {
     background-image: url("./images/ladybug-bg-image.jpg");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 .ladybug-logo {
@@ -124,8 +124,8 @@ a:active {
 
 /* media queries */
 
-@media (orientation: landscape) 
-
-@media screen /* definir breakpoints de tela */ - /* mudar :active pra :hover em telas desktop */
-
-/* ajustar a bg-image para ela se centralizar em telas menores */
+@media screen and (min-width: 992px) {
+    body {
+        background-attachment: fixed;
+    }
+}
