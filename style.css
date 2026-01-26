@@ -1,12 +1,67 @@
 @charset "UTF-8";
 
+:root {
+    /* cores */
+    --bg-color-body: #F5E1DA;
+    --bg-color-login-card: #FFFFFF;
+    --bg-color-button: #E57373;
+    --links-color: #46699E;
+    --button-color-transition: #F2F3F4;
+    --red-color-transition-1: #D84452;
+    --red-color-transition-2: #D32F2F;
+
+    /* fontes */
+    --main-font-family: "Mona Sans", sans-serif;
+    --main-font-size: 1em;
+    --title-font-size: 1.5em;
+    --placeholder-font-size: 0.8em;
+    --light-font-weight: 200;
+    --medium-font-weight: 300;
+    --heavy-font-weight: 400;
+    --button-active-font-weight: 600;
+    --a-transition-font-weight: 500;
+
+    /* medidas gerais */
+    --body-grid-row-gap: 1.5em;
+    --gap-form: 0.75em;
+    --max-width-login-card: 400px;
+    --padding-top-sign-up: 1em;
+
+    /* borders */
+    --main-border-radius: 2em;
+    --secondary-border-radius: 0.5em;
+    --border-input-focus: 3px solid #D84452;
+
+    /* paddings */
+    --padding-login-card: 1.5em;
+    --padding-input: 0.75em 0.5em;
+    --padding-left-placeholder: 1em;
+    --padding-top-sign-up: 1em;
+
+    /* medidas button */
+    --padding-button: 0.75em;
+    --margin-bottom-button: 0.25em;
+
+    /* medidas #forgot-password */
+    --padding-bottom-forgot-password: 1em;
+    --padding-right-forgot-password: 0.5em;
+    --padding-left-forgot-password: 0.5em;
+
+    /* transições de elementos */
+    --transition-links-active: all 0.03s ease;
+    --transition-links-hover: all 0.1s ease;
+    --transition-button-active: all 0.03s ease-in;
+    --transition-button-hover: all 0.3s ease-in;
+    --transform-button: scale(0.95);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Mona Sans", sans-serif;
-    font-size: 1em;
-    font-weight: 200;
+    font-family: var(--main-font-family);
+    font-size: var(--main-font-size);
+    font-weight: var(--light-font-weight);
 }
 
 body {
@@ -14,8 +69,8 @@ body {
     grid-template-rows: 1fr repeat(2, auto) 4fr;
     min-height: 100vh;
     place-items: center;
-    row-gap: 1.5em;
-    background-color: #F5E1DA; /* fallback para o carregamento da background-image */
+    row-gap: var(--body-grid-row-gap);
+    background-color: var(--bg-color-body); 
     background-image: url("./images/ladybug-bg-image.jpg");
     background-size: cover;
     background-position: center;
@@ -35,92 +90,92 @@ body {
     align-items: center;
     flex-wrap: nowrap;
     width: 90%;
-    max-width: 400px;
-    background-color: #FFFFFF;
-    border-radius: 2em;
-    padding: 1.5em; 
+    max-width: var(--max-width-login-card);
+    background-color: var(--bg-color-login-card);
+    border-radius: var(--main-border-radius);
+    padding: var(--padding-login-card); 
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 0.75em;
+    gap: var(--gap-form);
 }
 
 #title-login-card {
     text-align: center;
-    font-size: 1.5em;
-    font-weight: 400;
+    font-size: var(--title-font-size);
+    font-weight: var(--heavy-font-weight);
 }
 
 #subtitle-login-card {
     text-align: center;
-    font-weight: 300;
+    font-weight: var(--medium-font-weight);
 }
 
 label {
-    font-weight: 400;
+    font-weight: var(--heavy-font-weight);
 }
 
 input {
-    padding: 0.75em 0.5em;
-    border-radius: 0.5em;
+    padding: var(--padding-input);
+    border-radius: var(--secondary-border-radius);
 }
 
 input[placeholder] {
-    font-size: 0.8em;
-    font-weight: 300;
-    padding-left: 1em;   
+    font-size: var(--placeholder-font-size);
+    font-weight: var(--medium-font-weight);
+    padding-left: var(--padding-left-placeholder);   
 }
 
 input:focus {
-    border: 3px solid #D84452;
+    border: var(--border-input-focus);
     outline: none;
 }
 
 input:focus::placeholder {
-    font-weight: 400;
+    font-weight: var(--heavy-font-weight);
 }
 
 button {
-    padding: 0.75em;
-    background-color: #E57373;
-    font-weight: 400;
+    padding: var(--padding-button);
+    background-color: var(--bg-color-button);
+    font-weight: var(--heavy-font-weight);
     border: none;
-    border-radius: 2em;
-    margin-bottom: 0.25em;
-    transition: all 0.03s ease-in;
+    border-radius: var(--main-border-radius);
+    margin-bottom: var(--margin-bottom-button);
+    transition: var(--transition-button-active);
 }
 
 button:active {
-    font-weight: 600;
-    background-color: #D32F2F;
-    color: #F2F3F4;
-    transform: scale(0.95);
+    font-weight: var(--button-active-font-weight);
+    background-color: var(--red-color-transition-2);
+    color: var(--button-color-transition);
+    transform: var(--transform-button);
 }
 
 a {
     text-decoration: none;
-    font-weight: 400;
-    color: #46699E;
+    font-weight: var(--heavy-font-weight);
+    color: var(--links-color);
     display: inline-block;
-    transition: all 0.03s ease;
+    transition: var(--transition-links-active);
 }
 
 a:active {
-    font-weight: 500;
-    color: #D84452;
+    font-weight: var(--a-transition-font-weight);
+    color: var(--red-color-transition-1);
     text-decoration: underline;
 }
 
 #forgot-password {
-    padding-bottom: 1em;
-    padding-right: 0.5em;
-    padding-left: 0.5em;
+    padding-bottom: var(--padding-bottom-forgot-password);
+    padding-right: var(--padding-right-forgot-password);
+    padding-left: var(--padding-left-forgot-password);
 }
 
 #sign-up {
-    padding-top: 1em; 
+    padding-top: var(--padding-top-sign-up); 
 }
 
 /* media queries */
@@ -135,24 +190,24 @@ a:active {
 @media (hover:hover) {
     
     button {
-        transition: all 0.3s ease-in;
+        transition: var(--transition-button-hover);
     }
 
     button:hover {
         cursor: pointer;
-        font-weight: 600;
-        background-color: #D32F2F;
-        color: #F2F3F4;
-        transform: scale(0.95);
+        font-weight: var(--button-active-font-weight);
+        background-color: var(--red-color-transition-2);
+        color: var(--button-color-transition);
+        transform: var(--transform-button);
     }
 
     a {
-        transition: all 0.1s ease;
+        transition: var(--transition-links-hover);
     }
 
     a:hover {
-        font-weight: 500;
-        color: #D84452;
+        font-weight: var(--a-transition-font-weight);
+        color: var(--red-color-transition-1);
         text-decoration: underline;
     }
 }
