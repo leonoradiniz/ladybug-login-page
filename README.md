@@ -8,14 +8,18 @@
 > "O aplicativo para aprender a cuidar do seu jardim!"
 
 O propósito desse projeto foi criar uma interface de login para um app fictício, colocando em prática aprendizados de **design responsivo e desenvolvimento mobile-first.**
-Para isso, foi idealizado um app "fantasia" que ensina conteúdos de jardinagem, chamado *Ladybug.*
+Para isso, foi idealizado um app "fantasia" que ensina conteúdos de jardinagem, chamado *Ladybug.*  
+
+O projeto está disponível para visualização no GitHub Pages:
+
+[![Deploy](https://img.shields.io/badge/Acesse%20o%20Projeto-GitHub%20Pages-brightgreen?style=for-the-badge&logo=github)](https://leonoradiniz.github.io/ladybug-login-page/)
 
 ## 🛠 Tecnologias Utilizadas
 
 O projeto foi desenvolvido utilizando as seguintes tecnologias:    
 <div align="center">
-  <img src="https://img.shields.io/badge/HTML5-%23E34F26.svg?style=flat-square&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-%231572B6.svg?style=flat-square&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
 </div>   
 
 - **HTML5** - Estruturação semântica do conteúdo.     
@@ -56,5 +60,3 @@ ladybug-login-page/
 - Clone o repositório do GitHub;     
 - Abra o arquivo localmente e navegue até a pasta do projeto;
 - Agora basta abrir o arquivo ```index.html``` pelo seu navegador de preferência.
-- **GitHub Pages:** O projeto também está disponível pelo Github Pages, através do link:     
-  ```https://leonoradiniz.github.io/ladybug-login-page/```
